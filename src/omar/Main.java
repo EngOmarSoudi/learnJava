@@ -19,7 +19,8 @@ public class Main {
 //        System.out.println("Mortgage: " + calc());
 //        task.plusMinus();
 //        task.miniMaxSum();
-        task.timeConversion();
+//        task.timeConversion();
+        task.lonelyinteger();
 
 
     }

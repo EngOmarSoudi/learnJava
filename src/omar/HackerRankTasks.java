@@ -146,4 +146,41 @@ public class HackerRankTasks {
             }
         }
     }
+
+//    hacker rank task 4
+    public void lonelyinteger(){
+        int number;
+
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("enter the number of elements you want to add");
+        number=scanner.nextInt();
+        int[] c = new int[number];
+        int[] arry3=new int[number];
+        System.out.println("Enter the elements of the array: ");
+        for (int i=0;i<number;i++){
+            arry3[i]=scanner.nextInt();
+        }
+//        Arrays.sort(arry3);
+        System.out.println(Arrays.toString(arry3));
+//        int lon=0;
+        int lon = arry3[0];
+        for (int i = 1; i < arry3.length; i++) {
+            lon ^= arry3[i];
+
+        }
+        System.out.println(lon);
+//        for (int i =0;i<number;i++){
+////            System.out.println(arry3[i]);
+//            for (int g = 1 ; g<number;g++){
+//                if (arry3[i]!=arry3[g]){
+//                    lon+=arry3[i];
+////                    System.out.print(lon+" "+i+ " " +g +" "+arry3[g]+ +arry3[i]+"\n");
+//                }
+//
+//            }
+//
+//
+//        }
+//        System.out.println(lon);
+    }
 }
